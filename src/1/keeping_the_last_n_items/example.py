@@ -1,3 +1,7 @@
+"""
+Docstring  1.3.2保存最后n个元素
+"""
+
 from collections import deque
 
 def search(lines, pattern, history=5):
