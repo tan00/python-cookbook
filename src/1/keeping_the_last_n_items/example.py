@@ -1,4 +1,5 @@
 from collections import deque
+import os
 
 def search(lines, pattern, history=5):
     previous_lines = deque(maxlen=history)
@@ -9,7 +10,10 @@ def search(lines, pattern, history=5):
 
 # Example use on a file
 if __name__ == '__main__':
-    with open('somefile.txt') as f:
+    
+    os.chdir('keeping_the_last_n_items')
+    print(os.getcwd())
+    with open('example.py') as f:
         for line, prevlines in search(f, 'python', 5):
             for pline in prevlines:
                 print(pline, end='')

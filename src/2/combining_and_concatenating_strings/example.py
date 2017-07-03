@@ -9,7 +9,7 @@ def sample():
     yield "Chicago?"
 
 # (a) Simple join operator
-text = ''.join(sample())
+text = ' '.join(sample())
 print(text)
 
 # (b) Redirection of parts to I/O
