@@ -20,3 +20,8 @@ def change_date(m):
     return '{} {} {}'.format(m.group(2), mon_name, m.group(3))
 
 print(datepat.sub(change_date, text))
+
+
+
+
+

@@ -8,6 +8,7 @@ class safesub(dict):
         return '{%s}' % key
 
 s = '{name} has {n} messages.'
+#print( s.format(name='lin',n=100) )
 
 # (a) Simple substitution
 name = 'Guido'
@@ -27,4 +28,5 @@ def sub(text):
 
 print(sub('Hello {name}'))
 print(sub('{name} has {n} messages'))
+color = 'red'
 print(sub('Your favorite color is {color}'))

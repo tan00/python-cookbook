@@ -14,6 +14,7 @@ p1 = { key:value for key, value in prices.items() if value > 200 }
 
 print("All prices over 200")
 pprint(p1)
+print(p1)
 
 # Make a dictionary of tech stocks
 tech_names = { 'AAPL', 'IBM', 'HPQ', 'MSFT' }
