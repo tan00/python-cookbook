@@ -18,3 +18,5 @@ print('Common keys:', a.keys() & b.keys())
 print('Keys in a not in b:', a.keys() - b.keys())
 print('(key,value) pairs in common:', a.items() & b.items())
 
+c = { key:a[key] for key in a.keys()-{'z','w'} }
+print(c)
