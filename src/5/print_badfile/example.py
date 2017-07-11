@@ -37,7 +37,6 @@ def print_badfile(filename,encoding = 'utf-8'):
     files = os.listdir('.')
     print(files)
 
-sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
-print( sys.stdout.encoding )
 
-print_badfile('bäd.txt','utf-8')
+
+

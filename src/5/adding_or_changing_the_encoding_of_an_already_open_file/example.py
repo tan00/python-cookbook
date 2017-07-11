@@ -7,5 +7,9 @@ u = urllib.request.urlopen('http://www.python.org')
 f = io.TextIOWrapper(u, encoding='utf-8')
 text = f.read()
 
+with open('www.python.org.html','wt')as file:
+    file.write(text)
+
+
 print(text)
 
