@@ -2,7 +2,19 @@
 #
 # Various samples of reading CSV files
 
-import csv
+import csv 
+
+def chdir_to_curfiledir():
+    import os,sys
+    def cur_file_dir():
+        path = sys.path[0]
+        if os.path.isdir(path):
+            return path
+        elif os.path.isfile(path):
+            return os.path.dirname(path)
+    os.chdir( cur_file_dir() )
+
+chdir_to_curfiledir()
 
 # (a) Reading as tuples
 
