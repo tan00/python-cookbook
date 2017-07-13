@@ -75,8 +75,10 @@ class gen_csv_from_txt:
             for x in iter:
                 row = self.gen_listblock(x)            
                 f_csv.writerow(row)
-  
-gen = gen_csv_from_txt('HsmPerfTestResult_old.txt')
-gen.gen_csv()
+
+
+if __name__ == '__main__':
+    gen = gen_csv_from_txt('HsmPerfTestResult.txt')
+    gen.gen_csv()
 
 
