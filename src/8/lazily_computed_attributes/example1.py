@@ -8,20 +8,25 @@ class lazyproperty:
             value = self.func(instance)
             setattr(instance, self.func.__name__, value)
             return value
-        
-if __name__ == '__main__':
-    import math
-    class Circle:
-        def __init__(self, radius):
-            self.radius = radius
 
-        @lazyproperty
-        def area(self):
-            print('Computing area')
-            return math.pi * self.radius ** 2
+import math
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
 
-        @lazyproperty
-        def perimeter(self):
-            print('Computing perimeter')
-            return 2 * math.pi * self.radius
+    @lazyproperty
+    def area(self):
+        print('Computing area')
+        return math.pi * self.radius ** 2
+
+    @lazyproperty
+    def perimeter(self):
+        print('Computing perimeter')
+        return 2 * math.pi * self.radius 
+
+if __name__ == '__main__': 
+    c1 = Circle(5)
+    print( c1.area )
+    print( c1.area )
+
 

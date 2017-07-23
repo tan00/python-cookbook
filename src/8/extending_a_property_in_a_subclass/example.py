@@ -58,3 +58,6 @@ if __name__ == '__main__':
        a.name = 42
    except TypeError as e:
        print(e)
+
+   a1 = SubPerson('son1')    
+   print(a1.name)

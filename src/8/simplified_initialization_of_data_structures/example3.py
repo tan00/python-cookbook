@@ -23,3 +23,4 @@ if __name__ == '__main__':
 
     s1 = Stock('ACME', 50, 91.1)
     s2 = Stock('ACME', 50, 91.1, date='8/2/2012')
+    s3 = Stock('ACME', shares=50, price=91.1 , date='8/2/2012')

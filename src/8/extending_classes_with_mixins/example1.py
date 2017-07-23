@@ -83,3 +83,17 @@ try:
     d['x'] = 42
 except KeyError as e:
     print(e)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

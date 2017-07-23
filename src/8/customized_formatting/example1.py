@@ -16,4 +16,6 @@ class Date:
         fmt = _formats[code]
         return fmt.format(d=self)
 
-        
+date1 = Date(2017,7,16)
+print( format(date1) )
+print( format(date1, 'dmy') )

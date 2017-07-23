@@ -5,6 +5,8 @@ class Base:
     def __init__(self):
         print('Base.__init__')
 
+    
+
 class A(Base):
     def __init__(self):
         Base.__init__(self)
@@ -21,6 +23,8 @@ class C(A,B):
         B.__init__(self)
         print('C.__init__')
 
+
 if __name__ == '__main__':
     # Please observe double call of Base.__init__
     c = C()
+    print( C.__mro__)

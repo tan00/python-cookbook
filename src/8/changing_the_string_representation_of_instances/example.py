@@ -7,3 +7,9 @@ class Pair:
     def __str__(self):
         return '({0.x}, {0.y})'.format(self)
 
+
+p1 = Pair(3,5)
+print(p1)  ##str(p1)
+print(  str(p1) ) 
+print( repr(p1) ) 
+

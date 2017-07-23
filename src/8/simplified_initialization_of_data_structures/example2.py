@@ -22,5 +22,4 @@ if __name__ == '__main__':
         _fields = ['name', 'shares', 'price']
 
     s1 = Stock('ACME', 50, 91.1)
-    s2 = Stock('ACME', 50, price=91.1)
-    s3 = Stock('ACME', shares=50, price=91.1)
+    s2 = Stock('ACME', 50, price=91.1)    

@@ -23,3 +23,4 @@ class C(A,B):
 if __name__ == '__main__':
     # Observe that each class initialized only once
     c = C()
+    print( C.__mro__)
