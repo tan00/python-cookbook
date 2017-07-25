@@ -20,7 +20,7 @@ print(d)
 
 # Method 2: Use methodcaller
 import operator
-d = operator.methodcaller('distance', 0, 0)(p)
+d = operator.methodcaller('diistance', 0, 0)(p)
 print(d)
 
 # Application in sorting
