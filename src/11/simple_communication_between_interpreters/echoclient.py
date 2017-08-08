@@ -1,5 +1,7 @@
 from multiprocessing.connection import Client
-c = Client(('localhost', 25000), authkey=b'peekaboo')
+AUTHKEY = b'123456'
+
+c = Client(('localhost', 25000), authkey= AUTHKEY)
 c.send('hello')
 print('Got:', c.recv())
 c.send(42)

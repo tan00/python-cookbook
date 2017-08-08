@@ -1,7 +1,9 @@
 from multiprocessing.connection import Listener
 import traceback
 
-def echo_client(conn):
+AUTHKEY = b'123456'
+
+def handler(conn):
     try:
         while True:
             msg = conn.recv()
@@ -14,8 +16,8 @@ def echo_server(address, authkey):
     while True:
         try:
             client = serv.accept()
-            echo_client(client)
+            handler(client)
         except Exception:
             traceback.print_exc()
 
-echo_server(('', 25000), authkey=b'peekaboo')
+echo_server(('', 25000), authkey = AUTHKEY)
